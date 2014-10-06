@@ -26,15 +26,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendMailButtonPressd(sender: UIButton) {
-        self.messageLabel.hidden = false
-        self.messageLabel.text = self.enterMessageTextField.text
-        self.messageLabel.textColor = UIColor.redColor()
+        messageLabel.hidden = false
+        messageLabel.text = enterMessageTextField.text
+        messageLabel.textColor = UIColor.redColor()
         
         
-        self.enterMessageTextField.text = ""
-        self.enterMessageTextField.resignFirstResponder()
+        enterMessageTextField.text = ""
+        enterMessageTextField.resignFirstResponder()
         
-        self.mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
+        mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
     }
 
 }
